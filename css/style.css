@@ -1,0 +1,902 @@
+/*====================== common css start ====================*/
+*{
+    padding     : 0;
+    margin      : 0;
+    box-sizing  : border-box;
+}
+
+:root{
+    --primary-color :#007F5F;
+    --primary-font  :'Poppins', sans-serif;
+    --text-color    :#616161;
+}
+
+ol,ul{
+    list-style  : none;
+    padding     : 0;
+    margin      : 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    background-color    : var(--primary-color);
+    color               : #fff;
+    padding             : 14px 34px;
+    font-family         : var(--primary-font);
+    font-weight         : 600;
+    font-size           : 16px;
+    border              : 1px solid var(--primary-color);
+    transition          : .4s;
+    border-radius       : 17px;
+    display             : inline-block;
+}
+
+.button:hover{
+    color           : var(--primary-color);
+    background-color: #fff;
+}
+
+p{
+    color       : var(--text-color);
+    font-weight : 400;
+    font-size   : 16px;
+    line-height : 30px;
+}
+
+.title{
+    text-align  : center;
+    padding     : 0 270px;
+}
+
+.title h2{
+    font-family     : var(--primary-font);
+    font-weight     : 600;
+    font-size       : 40px;
+    margin-bottom   : 20px;
+}
+
+/*====================== common css end ====================*/
+/*====================== navbar part start ====================*/
+.navbar{
+    padding: 20px 0;
+}
+
+nav ul li a{
+    font-family : var(--primary-font);
+    font-size   : 16px;
+    font-weight : 400;
+    color       : var(--text-color);
+    margin      : 0 15px;
+    position    : relative;
+}
+
+nav ul li a::after{
+    position        : absolute;
+    left            : 0;
+    bottom          : 0;
+    content         : "";
+    width           : 0%;
+    height          : 3px;
+    background-color: var(--primary-color);
+    transition      : .4s;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+.navbar-btn-div{
+    margin-left: auto;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding-right:0;
+	padding-left: var(--bs-navbar-nav-link-padding-x);
+}
+/*====================== common part end ====================*/
+/*====================== banner part start ====================*/
+#banner{
+    background-color: #F8F8F8;
+    padding-top     : 130px;
+    padding-bottom  : 330px;
+    position        : relative;
+    overflow        : hidden;
+}
+
+#banner .img-1{
+    position:absolute;
+    bottom  : -185px;
+    right   : 0;
+    width   : 600px;
+    z-index : 2;
+}
+
+#banner .img-1 img{
+    width   : 100%;
+}
+
+#banner .img-2{
+    position: absolute;
+    bottom  : -221px;
+    right   : 333px;
+    width   : 600px;
+}
+
+#banner .img-2 img{
+    width   : 100%;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner-sharp{
+    position        : absolute;
+    bottom          : 150x;
+    left            : 0;
+    width           : 825px;
+    margin-top      : 75px;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    padding         :35px 0 35px 30px;
+    background-color: #fff;
+    box-shadow      : 0px 20px 50px rgba(0, 0, 0, 0.05);
+    border-radius   : 0px 10px 10px 10px;
+    z-index         : 5;
+}
+
+.banner-sharp .item{
+    width   : 23%;
+}
+
+.banner-sharp .item h4{
+    font-family     : var(--primary-font);
+    font-size       : 20px;
+    font-weight     : 700;
+    margin-bottom   : 8px;
+    margin          : 0 8px;
+    display         : inline-block;
+}
+
+.banner-sharp .item p{
+    margin-left     : 20px;
+}
+
+.banner-sharp .item .search{
+    background-color: var(--primary-color);
+    color           : #fff;
+    border-radius   : 10px;
+    font-size       : 20px;
+    margin-left     : 50px;
+    padding         : 30px;
+    cursor          : pointer;
+}
+
+#banner h1{
+    font-family : var(--primary-font);
+    font-weight : 600;
+    font-size   : 65px;
+    line-height : 80px;
+}
+
+#banner .banner-left .bannerp{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top      : 30px;
+    margin-bottom   : 40px;
+    padding-right   :100px;
+
+}
+
+/*====================== banner part end ====================*/
+/*====================== user part start ====================*/
+#user{
+    margin-top  : 150px;
+}
+
+.user{
+    margin-top      : 120px;
+    margin-bottom   : 30px;
+}
+
+.user-item{
+    background      : #FFFFFF;
+    border-radius   : 14px;
+    padding         : 63px 53px;
+    box-sizing      : border-box;
+    transition      : .4s;
+}
+
+.user-item:hover{
+    box-shadow  : 0px 10px 50px rgba(0, 0, 0, 0.05);
+}
+
+.user-item .icone{
+    padding         : 18px;
+    background      : rgba(0, 127, 95, 0.1);
+    border-radius   : 14px;
+    display         : inline-block;
+}
+
+.user-item .text{
+    margin-top  : 39px;
+}
+
+.user-item .text h3{
+    font-family     : var(--primary-font);
+    font-weight     : 500;
+    font-size       : 25px;
+    margin-bottom   : 20px;
+}
+
+/*====================== user part end ====================*/
+/*====================== popular part start ====================*/
+#popular{
+    margin-top      : 150px;
+    margin-bottom   : 150px;
+}
+
+.popular-wrapper{
+    margin-top      : 70px;
+    display         : flex;
+    justify-content : space-between;
+    align-items     : center;
+}
+
+.popular-wrapper .item{
+    width       : 19.50%;
+    padding     : 20px 20px 40px 20px;
+    transition  : .4s;
+}
+
+.popular-wrapper .item:hover{
+    box-shadow  : 0px 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.popular-wrapper .item .img{
+    margin-bottom   : 30px;
+}
+
+.popular-wrapper .item .img img{
+    width   : 100%;
+}
+
+.popular-wrapper .item .text .icone-text{
+    margin-right    : 10px;
+}
+
+.popular-wrapper .item .text .icone-text{
+    display     : flex;
+    align-items : center;
+}
+
+.popular-wrapper .item .text .icone-text .span{
+    color       : #FF8B00;
+    margin-left : 10px;
+    margin-top  : 5px;
+    font-size   : 16px;
+    font-weight : 400;
+    font-family : var(--primary-font);
+}
+
+.popular-wrapper .item .text .pstyle{
+    margin-bottom   : 30px
+}
+
+.popular-wrapper .item .text h3{
+    font-family     : var(--primary-font);
+    font-weight     : 500;
+    font-size       : 25px;
+    margin-bottom   : 20px;
+    margin-top      : 17px;
+}
+
+.popular-wrapper .item .text span{
+    font-family     : var(--primary-font);
+    font-weight     : 600;
+    font-size       : 20px;
+    color           : #000;
+}
+
+/*====================== popular part end ====================*/
+/*====================== remember part start ====================*/
+
+#remember{
+    background  : rgba(30, 30, 30, 0.05);
+    padding     : 150px 0;
+}
+
+.remember-wrapper .left{
+    padding-right   : 185px;
+    margin-top      : 100px;
+}
+
+.remember-wrapper .left h3{
+    font-family     : var(--primary-font);
+    font-weight     : 600;
+    font-size       : 40px;
+    line-height     : 60px;
+    letter-spacing  : 0.2px;
+}
+
+.remember-wrapper .left ul{
+    margin-top      : 10px;
+    margin-bottom   : 40px;
+}
+
+.icone-list{
+    display : flex;
+}
+
+.remember-wrapper .left li{
+    font-family : var(--primary-font);
+    font-weight : 400;
+    font-size   : 16px;
+    line-height : 30px;
+    margin-left : 15px;
+}
+
+.remember-wrapper .left li i{
+    color   : var(--primary-color);
+}
+
+.remember-wrapper .right .item{
+    padding         : 62px 32px;
+    background-color: #fff;
+    border-radius   : 17px;
+    transition      : .4s;
+    margin          : 12px 0;
+}
+
+.remember-wrapper .right .item:hover{
+    background-color: var(--primary-color);
+    color           : #fff;
+}
+
+.remember-wrapper .right .item .icone{
+    display         : inline-block;
+    padding         : 22px 20px;
+    background      : rgba(0, 127, 95, 0.1);
+    margin-bottom   : 20px;
+    border-radius   : 14px;
+    transition      : .4s;
+}
+
+.remember-wrapper .right .item:hover .icone{
+    background-color: #fff;
+}
+
+.remember-wrapper .right .item .text h4{
+    font-family : var(--primary-font);
+    font-size   : 40px;
+    font-weight : 600;
+
+}
+
+.remember-wrapper .right .item .text p{
+    font-family : var(--primary-font);
+    font-weight : 500;
+    font-size   : 25px;
+    color       : #616161;
+    transition  : .4s;
+}
+
+.remember-wrapper .right .item:hover .text p{
+    color   : #fff;
+}
+/*====================== remember part end ====================*/
+/*====================== destination part start ====================*/
+#destination{
+    padding-top: 150px;
+}
+#destination .left{
+    margin-top: 120px;
+}
+#destination .left h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+}
+#destination .left p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--text-color);
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 125px;
+}
+#destination .right .img{
+    position: relative;
+}
+#destination .right .img .shap{
+    position: absolute;
+    top: 90px;
+    right: 165px;
+}
+#destination .right ul{
+    margin-top: 40px;
+}
+#destination .right ul li{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    width: 350px;
+    height: 52px;
+    margin: 10px 0;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
+    border-radius: 7.9968px;
+    padding: 12px 0px 12px 35px;
+    box-sizing: border-box;
+    transition: .4s;
+    position: relative;
+}
+
+#destination .right ul li:hover{
+    background: #B1E3FF;
+    box-shadow: inset 0px -1px 0px #EFF3F5;
+    border-radius: 8px 8px 0px 0px;
+}
+
+#destination .right ul li .icone{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+
+#destination .right ul li:hover .icone{
+    display: none;
+}
+
+
+#destination .right ul li .search{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: .4s;
+    display:none;
+}
+
+#destination .right ul li:hover .search{
+    display: inline-block;
+}
+/*====================== destination part end ====================*/
+/*====================== always part start ====================*/
+#always{
+    margin-top: 70px;
+}
+#always .img img{
+    width: 90%;
+}
+#always .text h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.2px;
+}
+
+#always .text p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+#always .list{
+    display: flex;
+}
+
+#always .list ul{
+    margin-right: 28px;
+}
+
+
+#always .list ul li{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: #616161;
+    margin-bottom: 15px;
+}
+
+#always .list ul li i{
+    margin-right: 10px;
+}
+
+/*====================== always part end ====================*/
+/*====================== money part start ====================*/
+#money{
+    margin-top: 70px;
+}
+
+#money .text h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+#money .text .ptext{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-right: 115px;
+}
+
+.friendly{
+    width: 420px;
+    background-color:rgba(0, 127, 95,0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.friendly p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#money .text h5{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    margin-left: 20px;
+}
+
+#money .text h5::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+
+}
+
+#money .text ul li{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 29px;
+    position: relative;
+    margin-left: 20px;
+}
+
+#money .text ul li::after{
+    position: absolute;
+    top: 4px;
+    left: -20px;
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    border-radius: 50%;
+
+}
+
+#money .text i{
+    margin-left: 10px;
+}
+
+#money .img img{
+    width: 100%;
+}
+
+#money .img{
+    position: relative;
+}
+
+#money .img ul li{
+    position: absolute;
+    bottom: 10px;
+    left: 60px;
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: #616161;
+    margin-bottom: 16px;
+    padding: 12px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+#money .img ul li:nth-child(2){
+    bottom: 70px;
+    left: 77px;
+}
+
+#money .img ul li:nth-child(1){
+    bottom: 130px;
+    left: 45px;
+}
+/*====================== money part end ====================*/
+/*====================== explore part start ====================*/
+#explore{
+    margin-top: 140px;
+}
+
+#explore .right h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#explore .right p{
+    padding-right: 90px;
+    margin-bottom: 30px;
+}
+
+#explore a{
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+#explore a:last-child{
+    margin-right: 0;
+}
+/*====================== explore part end ====================*/
+/*====================== slider part start ====================*/
+#slider{
+    margin-top: 100px;
+}
+.slider .item .img img{
+    width: 100%;
+
+}
+
+.slider .item{
+    padding: 21px;
+    background-color: #fff;
+}
+
+.slider .item .text{
+    margin-top: 30px;
+}
+
+.slider .item .text h4{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.slider .item .text h5{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    font-size: 20px;
+    color: #616161;
+}
+
+.slider .item .text p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-right: 30px;
+}
+
+.slider .item .text i{
+    margin-right: 15px;
+}
+
+.slider ul{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slider ul li{
+    margin: 0 10px;
+}
+
+.slider ul li button{
+    font-size: 0;
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D6D2D2;
+    display: inline-block;
+}
+
+.slider ul .slick-active button{
+    background-color: var(--primary-color);
+}
+/*====================== slider part end ====================*/
+/*====================== testimonial part start ====================*/
+#testimonial{
+    margin-top: 150px;
+}
+
+#testimonial .left{
+    position: relative;
+}
+
+#testimonial .left .img1{
+    position: absolute;
+    top: 0;
+    right: 115px;
+}
+
+#testimonial .left .img2 {
+    position: absolute;
+    top: 165px;
+    right: 275px;
+}
+#testimonial .left .img3 {
+    position: absolute;
+    top: 187px;
+    left:0px;
+}
+#testimonial .left .img4 {
+    position: absolute;
+    top: 390px;
+    right: 365px;
+}
+
+#testimonial .left .img5 {
+    position: absolute;
+    top: 353px;
+    right: 140px;
+}
+
+#testimonial .right{
+    margin-top: 100px;
+}
+
+#testimonial .right h4{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+#testimonial .right p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+   margin: 24px 0;
+   padding-right: 100px;
+}
+
+#testimonial .right h5{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 20px;
+}
+/*====================== testimonial part end ====================*/
+/*====================== subscribe part start ====================*/
+#subscribe{
+    margin-top: 150px;
+   background:var(--primary-color);
+   padding: 150px 0;
+   text-align: center;
+   color: #fff;
+}
+
+#subscribe h3{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    padding: 0 330px;
+}
+#subscribe p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #fff;
+    padding: 0 360px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#subscribe input{
+    padding: 35px 550px 35px 25px;
+    width: 770px;
+    background: #FFFFFF;
+    border-radius: 17px;
+    box-sizing: border-box;
+}
+
+#subscribe form{
+    position: relative;
+    display: inline-block;
+}
+
+#subscribe form button{
+    position: absolute;
+    top: 50%;
+    right:10px;
+    transform: translateY(-50%);
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 16px;
+    border: none;
+    padding: 25px 40px;
+    background-color: var(--primary-color);
+    border-radius: 17px;
+    color: #fff;
+}
+/*====================== subscribe part end ====================*/
+/*====================== footer part start ====================*/
+footer{
+    padding-top: 150px;
+    padding-bottom: 105px;
+}
+
+footer .icone-item .icone{
+    margin: 45px 0;
+}
+
+footer .icone-item .icone i{
+    margin-right: 40px;
+    font-size: 50px;
+}
+
+footer .icone-item .icone .facbook{
+    color:#1877F2;
+}
+
+footer .icone-item .icone .twitter{
+    color:#1DA1F2;
+}
+
+footer .icone-item .icone .linkedin{
+    color:#0A66C2;
+}
+
+footer .icone-item .icone .pinterest{
+    color:#E60019;
+}
+
+footer .icone-item li{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #616161;
+}
+
+footer .item h5{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+footer .item li{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    color: #616161;
+}
+/*====================== footer part end ====================*/
